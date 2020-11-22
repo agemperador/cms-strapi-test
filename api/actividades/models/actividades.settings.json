@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "actividades",
+  "info": {
+    "name": "Actividades"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Flyer": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Descripcion": {
+      "type": "richtext"
+    },
+    "Fecha": {
+      "type": "date"
+    }
+  }
+}

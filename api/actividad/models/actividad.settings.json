@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Actividad",
+  "info": {
+    "name": "Actividad"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "img": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "texto": {
+      "type": "richtext"
+    }
+  }
+}
